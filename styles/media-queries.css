@@ -1,0 +1,1211 @@
+/* MEDIA QUERIE DE TODAS AS PÁGINAS, DEFAULT = MOBILE */
+/* MEDIA de  760 - 1180   e  > 1200px*/
+
+/* TABLET - 760 - 1180px */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+    
+    /* PÁGINA 1 */
+#pagina-1{
+    
+  max-width: 100vw;
+  height: 50vh;
+  background-size: cover;
+}
+    
+
+/* Cabecalho página 1 */
+.cabecalho{
+  max-width: 100%;
+  height: 10vh;
+  max-height: 15vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+}
+    
+.logo{
+  width: 200px;
+  height: 80px;
+}
+
+.cabecalho__menu ul {
+  width: 60vw;
+  max-width: 100vw;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row;
+  
+}
+
+.cabecalho__menu__link a {
+  font-size: 0.8rem;
+  margin: 10px;
+}
+
+
+.krenel-texto-conteudo{
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* O que fazemos */
+
+.cabecalho__2{
+  width: 100vw;
+  max-width: 100vw;
+  height: 10vh;
+  max-height: 30vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* eixo y - centralizar*/
+  justify-content: center; /* eixo x esquerda*/
+}
+
+.cabecalho__2__conteudo{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* Section galeria */
+.galeria-flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 100vw;
+  margin: 0 auto; /*centralizar com a distância máxima*/
+}
+
+
+.galeria-flexbox > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 18%;
+  max-width: 100%; /*largura da div para conter todas 6 na mesma linha*/
+
+}
+
+.galeria-flexbox > div > img{
+  max-width: 100%;
+  height: 10vh;
+  max-height: 15vh;
+  margin: 0 auto; /*centralizar horizontalmente com relação ao container pai*/
+}
+
+.galeria-flexbox > div > p{
+  font-family: var(--fonte_primaria);
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.email{
+  width: 100%;
+  max-width: 100vw;
+  
+}
+
+.email-conteudo{
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+/* PÁGINA 3 */
+
+/* Cabecalho página 3 */
+.cabecalho-2 {
+  width: 100vw;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.logo-2 {
+  width: 200px;
+  height: 80px;
+}
+
+.cabecalho__menu-2 ul {
+  width: 70vw;
+  max-width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  text-align: center;
+}
+
+.cabecalho__menu__link-2 a {
+  /* border: 2px solid red; */
+  font-size: 1rem;
+  text-align: center;
+
+}
+
+.cabecalho__menu__link-2 a > strong {
+  /* border: 2px solid red; */
+  font-family: var(--fonte_primaria);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  list-style: none;
+}
+
+
+/* Main */
+
+.textos-fundo-preenchido {
+  max-width: 100vw;
+  background-color: var(--cor-4);
+  padding-bottom: 20px;
+}
+
+/* comum com a ultima div da ultima página antes do footer */
+.textos-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: var(--fonte_primaria);
+  line-height: 1.4;
+}
+
+.titulo-pagina {
+  color: var(--cor-primaria);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.texto-secundario {
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+/* Parte 2 da página 3 - abaixo da imagem "jovem brasileiro" */
+.textos-fundo-preenchido-2 {
+  max-width: 80vw;
+  margin: 0 auto;
+  background-color: var(--cor-4);
+  padding-bottom: 50px;
+}
+
+.textos-conteudo-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  max-width: 80%;
+  margin: 0 auto;
+  font-family: var(--fonte_primaria);
+  line-height: 1.4;
+}
+
+.titulo-pagina-2 {
+  color: var(--cor-primaria);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+
+.div-listas {
+  margin-bottom: 20px;
+}
+.div-listas-conteudo {
+  text-align: left;
+  line-height: 1.3;
+}
+
+.texto-secundario-2 {
+  font-size: 1rem;
+  text-align: left;
+}
+
+/* GALERIA 1  */
+* Celular */
+
+/* Galeria 1- elo editora */
+.elo-editora {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+}
+/* cert */
+.left {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* alinhar no topo, inclusive a imagem left*/
+    justify-content: center;
+
+  }
+  
+  .left-imagem {
+    width: 20%;
+    max-width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .left-titulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-primaria);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .left-paragrafo {
+    max-width: 80%;
+    font-size: 1rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-preto);
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .left a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-primaria);
+  }
+  
+/* Divs com livros */
+.produtos {
+    display: flex;
+    flex-direction: column;
+    width: 86vw;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+
+.educacao-infantil-0-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* Botao ficar fixo */
+    position: relative;
+    margin-top: 30px;
+    /* Separar das outras divs */
+    margin-bottom: 20px; 
+   
+}
+
+.titulo-produtos {
+    text-align: center;
+    font-family: var(--fonte_primaria);
+    font-size: 1.3rem;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+    
+    
+}
+
+/* Código js */
+.outer-0-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inner {
+    /* Livros ocupando cada livro ocupando 80vw */
+    flex: 0 0 350px; 
+    display: flex;
+    flex-direction: column;
+    
+    /* margin-right: 20px;  sem margin para o botao com um clique ir para o proximo livro*/
+  }
+  
+  .imagem-galeria {
+    max-width: 100%;
+    /* padronizar altura das imagens */
+    height: 25vh; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /*efeito de sombra*/
+    margin: 10px;
+  }
+
+  .titulo-imagem-produto {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: var(--fonte_primaria);
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .inner > p {
+    font-family: var(--fonte_primaria);
+    font-size: 0.8rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Botao */
+  .paddle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    background-color: var(--cor-branco);
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    vertical-align: middle
+  }
+
+  .lefty {
+    left: 0;
+    background-image: url('../assets/chevron.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  
+  .righty {
+    right: 0;
+    background-image: url('../assets/chevron.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+  }
+  
+  /* 3- 5  */
+  .educacao-infantil-3-5 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* Botao ficar fixo */
+    position: relative;
+    margin-top: 30px;
+    /* Separar das outras divs */
+    margin-bottom: 20px; 
+   
+}
+
+.outer-3-5 {
+  max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+    
+  }
+
+    /* 6- 8  */
+    .educacao-infantil-6-8 {
+      display: flex;
+      flex-direction: column;
+      max-width: 100vw;
+      /* Botao ficar fixo */
+      position: relative;
+      margin-top: 30px;
+      /* Separar das outras divs */
+      margin-bottom: 20px; 
+     
+  }
+  
+  .outer-6-8 {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: start;
+      overflow: hidden;
+    }
+
+     /* 9 - 10  */
+     .educacao-infantil-9-10 {
+      display: flex;
+      flex-direction: column;
+      max-width: 100vw;
+      /* Botao ficar fixo */
+      position: relative;
+      margin-top: 30px;
+      /* Separar das outras divs */
+      margin-bottom: 20px; 
+     
+  }
+  
+  .outer-9-10 {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: start;
+      overflow: hidden;
+    }
+
+/* 11-14  */
+.educacao-infantil-11-14 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  /* Botao ficar fixo */
+  position: relative;
+  margin-top: 30px;
+  /* Separar das outras divs */
+  margin-bottom: 20px; 
+
+}
+
+.outer-11-14 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+}
+
+/* JOvem brasileiro e dengue */
+.outer-0-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/* MEDIA */ 
+
+/* 1200 - 1980 ...*/
+@media screen and (min-width: 1200px) {
+  /* PÁGINA 1 */
+  
+  /* Cabecalho página 1 */
+  .cabecalho{
+    width: 90%;
+    max-width: 100vw;
+    height: 15vh;
+    max-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /*separar imagem e palavras*/
+    flex-direction: row;
+  }
+  
+  .cabecalho > img{
+    width: 300px;
+    height: 100px;
+  }
+  
+  .cabecalho__menu ul {
+    width: 100%;
+    max-width: 100vw;
+    align-items: end;
+    justify-content: space-between;
+    flex-direction: row;  
+    margin: 0 90px;
+  }
+  
+  .cabecalho__menu__link a {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+
+  .krenel-texto-conteudo{
+    font-size: 2.55rem;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    line-height: 1.2;
+
+  }
+
+  /* O que fazemos */
+
+  .cabecalho__2{
+    width: 100vw;
+    max-width: 100vw;
+    height: 20vh;
+    max-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* eixo y - centralizar*/
+    justify-content: center; /* eixo x esquerda*/
+  }
+  
+  .cabecalho__2__conteudo{
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  
+  /* Section galeria */
+  .galeria-flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 100vw;
+    margin: 0 auto; /*centralizar com a distância máxima*/
+  }
+  
+  
+  .galeria-flexbox > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    max-width: 100%; /*largura da div para conter todas 6 na mesma linha*/
+  
+  }
+  
+  .galeria-flexbox > div > img{
+    max-width: 100%;
+    height: 20vh;
+    /*  */
+    margin: 0 auto; /*centralizar horizontalmente com relação ao container pai*/
+  }
+  
+  .galeria-flexbox > div > p{
+    font-family: var(--fonte_primaria);
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+.email > a{
+    font-size: 2rem;
+}
+
+/* FOOTER */
+
+.pagina-5 {
+  background-color: var(--cor-cinza-escuro);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pagina-5-cabecalho-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 100vw;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  
+}
+
+.pagina-5-cabecalho-1-logo {
+  width: 100%;
+  height: auto;
+  margin-right: 80px;
+
+}
+
+.container-pagina-5 {
+  width: 80vw;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/*links footer*/
+.container-pagina-5 > a{
+text-decoration: none;
+font-size: 1.8rem;
+font-family: var(--fonte_primaria);
+color: var(--cor-terciaria);
+width: 100%;
+max-width: 100%;
+text-align: left;
+margin-bottom: 10px;
+line-height: 1.5;
+}
+
+.terceira-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vh;
+}
+.redes-sociais {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.logos-redes-sociais{
+  /* border: 1px solid red; */
+  max-width: 80%;
+}
+.copyright{
+  max-width: 100vw;
+}
+
+.copyright-conteudo{
+  color: var(--cor-branco);
+  font-family: var(--fonte_primaria);
+  font-size: 1rem;
+}
+
+/* PÁGINA 3 */
+
+/* Cabecalho página 3 */
+.cabecalho-2 {
+    width: 90%;
+    max-width: 100vw;
+    height: 15vh;
+    max-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*separar imagem e palavras*/
+    flex-direction: row;
+
+}
+
+.logo-2 {
+  width: 300px;
+  height: 100px;
+}
+
+.cabecalho__menu-2 ul {
+   width: 100%;
+  max-width: 100vw;
+  margin: 0 60px;
+}
+
+.cabecalho__menu__link-2 a {
+  /* border: 2px solid red; */
+  font-size: 1.3rem;
+  font-weight: 500;
+
+}
+
+.cabecalho__menu__link-2 a > strong {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+
+
+/* Main */
+
+.textos-fundo-preenchido {
+  max-width: 100vw;
+  background-color: var(--cor-4);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.textos-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 50%;
+  margin-left: 250px;
+  font-family: var(--fonte_primaria);
+  line-height: 1.4;
+}
+
+.titulo-pagina {
+  color: var(--cor-primaria);
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.texto-secundario {
+  max-width: 38vw;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+/* Galeria 1 - elo editora */
+.left {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 13%;
+}
+
+.left-imagem {
+  width: 30%;
+  max-width: 30%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+}
+
+.left-titulo {
+  font-size: 2rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-primaria);
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.left-paragrafo {
+  max-width: 100%;
+  font-size: 1.3rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-preto);
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.left a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-primaria);
+  text-align: left;
+}
+
+/* Galeria 2-jovem e dengue */
+.left-2 {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-left: 13%;
+}
+
+.left-imagem-2 {
+  width: 100%;
+  max-width: 100vw;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+}
+
+.left-titulo-2 {
+  font-size: 2rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-primaria);
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.left-paragrafo-2 {
+  max-width: 100%;
+  font-size: 1.3rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-preto);
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Parte 2 da página 3 - abaixo da imagem "jovem brasileiro" */
+.textos-fundo-preenchido-2 {
+  max-width: 80vw;
+  margin: 0 auto;
+  background-color: var(--cor-4);
+  margin-bottom: 50px;
+}
+
+.textos-conteudo-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  max-width: 90%;
+  margin: 0 auto;
+  font-family: var(--fonte_primaria);
+  line-height: 1.4;
+}
+
+.titulo-pagina-2 {
+  color: var(--cor-primaria);
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+
+.div-listas {
+  margin-bottom: 20px;
+}
+.div-listas-conteudo {
+  text-align: left;
+  line-height: 1.3;
+  font-size: 1.5rem;
+}
+
+.texto-secundario-2 {
+  font-size: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* Galeria 1- elo editora */
+.elo-editora {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  align-items: start; /* alinhar no topo, inclusive a imagem left*/
+}
+
+
+.left {
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.left-imagem {
+  width: 20%;
+  max-width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.left-titulo {
+  font-size: 2rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-primaria);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.left-paragrafo {
+  max-width: 80%;
+  font-size: 1.5rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-preto);
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.left a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-family: var(--fonte_primaria);
+  color: var(--cor-primaria);
+}
+
+.produtos {
+  
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 59%;
+  max-width: 65%;
+  overflow-x: hidden;
+}
+
+.educacao-infantil-0-2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  /* Botao ficar fixo */
+  position: relative;
+  margin-top: 30px;
+  /* Separar das outras divs */
+  margin-bottom: 20px; 
+ 
+}
+
+.titulo-produtos {
+  text-align: left;
+  font-family: var(--fonte_primaria);
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 20px;
+  
+  
+}
+
+/* Código js */
+.outer-0-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+}
+
+.inner {
+  flex: 0 0 auto;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.imagem-galeria {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /*efeito de sombra*/
+}
+
+.titulo-imagem-produto {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: var(--fonte_primaria);
+  font-size: 1rem;
+}
+
+.inner > p {
+  font-family: var(--fonte_primaria);
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+/* Botao */
+.paddle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 35px;
+  background-color: var(--cor-branco);
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  vertical-align: middle
+}
+
+.lefty {
+  left: 0;
+  background-image: url('../assets/chevron.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.righty {
+  right: 0;
+  background-image: url('../assets/chevron.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
+}
+
+/* 3- 5  */
+.educacao-infantil-3-5 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  /* Botao ficar fixo */
+  position: relative;
+  margin-top: 30px;
+  /* Separar das outras divs */
+  margin-bottom: 20px; 
+ 
+}
+
+.outer-3-5 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+}
+
+  /* 6- 8  */
+  .educacao-infantil-6-8 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* Botao ficar fixo */
+    position: relative;
+    margin-top: 30px;
+    /* Separar das outras divs */
+    margin-bottom: 20px; 
+   
+}
+
+.outer-6-8 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+  }
+
+   /* 9 - 10  */
+   .educacao-infantil-9-10 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* Botao ficar fixo */
+    position: relative;
+    margin-top: 30px;
+    /* Separar das outras divs */
+    margin-bottom: 20px; 
+   
+}
+
+.outer-9-10 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+  }
+
+/* 11-14  */
+  .educacao-infantil-11-14 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  /* Botao ficar fixo */
+  position: relative;
+  margin-top: 30px;
+  /* Separar das outras divs */
+  margin-bottom: 20px; 
+
+}
+
+.outer-11-14 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+}
+
+
+/* Galeria 2-jovem e dengue */
+
+.jovem-brasileiro {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  align-items: start; /* alinhar no topo, inclusive a imagem left*/
+
+}
+.flexbox-left-produtos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.left-2 {
+  max-width: 40vw;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .left-imagem-2 {
+    max-width: 80vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .left-titulo-2 {
+    font-size: 2rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-primaria);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 80vw;
+  }
+  
+  .left-paragrafo-2 {
+    max-width: 80%;
+    font-size: 1.5rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-preto);
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+
+
+/* Divs com livros */
+.produtos-2 {
+flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  max-width: 60%;
+}
+
+
+.parte-2-divs-livros {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100vw;
+  /* Botao ficar fixo */
+  position: relative;
+  margin-top: 30px;
+  /* Separar das outras divs */
+  margin-bottom: 20px; 
+ 
+}
+
+}

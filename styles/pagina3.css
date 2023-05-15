@@ -1,0 +1,342 @@
+
+/* PÁGINA 3 */
+#materiais-paradidaticos {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Cabecalho página 3 */
+.cabecalho-2 {
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.logo-2 {
+    width: 150px;
+    height: 50px;
+}
+
+.cabecalho__menu-2 ul {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.cabecalho__menu__link-2 a {
+    /* border: 2px solid red; */
+    font-family: var(--fonte_primaria);
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--cor-preto);
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.cabecalho__menu__link-2 a > strong {
+    font-family: var(--fonte_primaria);
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Main */
+
+.textos-fundo-preenchido {
+    max-width: 100vw;
+    background-color: var(--cor-4);
+    padding-bottom: 20px;
+}
+
+/* comum com a ultima div da ultima página antes do footer */
+.textos-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    font-family: var(--fonte_primaria);
+    line-height: 1.4;
+}
+
+.titulo-pagina {
+    color: var(--cor-primaria);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.texto-secundario {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Celular */
+
+/* Galeria 1- elo editora */
+.elo-editora {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    align-items: center;
+    justify-content: center;
+
+}
+/* cert */
+.left {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* alinhar no topo, inclusive a imagem left*/
+    justify-content: center;
+
+  }
+  
+  .left-imagem {
+    width: 20%;
+    max-width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  
+  .left-titulo {
+    font-size: 1.5rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-primaria);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .left-paragrafo {
+    max-width: 80%;
+    font-size: 1rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-preto);
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .left a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: var(--fonte_primaria);
+    color: var(--cor-primaria);
+  }
+  
+/* Divs com livros */
+.produtos {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+
+.educacao-infantil-0-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* Botao ficar fixo */
+    position: relative;
+    margin-top: 30px;
+    /* Separar das outras divs */
+    margin-bottom: 20px; 
+   
+}
+
+.titulo-produtos {
+    text-align: center;
+    font-family: var(--fonte_primaria);
+    font-size: 1.3rem;
+    color: var(--cor-primaria);
+    margin-bottom: 20px;
+    
+    
+}
+
+/* Código js */
+.outer-0-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .inner {
+    /* Livros ocupando cada livro ocupando 80vw */
+    flex: 0 0 350px; 
+    display: flex;
+    flex-direction: column;
+    
+    /* margin-right: 20px;  sem margin para o botao com um clique ir para o proximo livro*/
+  }
+  
+  .imagem-galeria {
+    max-width: 100%;
+    /* padronizar altura das imagens */
+    height: 35vh; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /*efeito de sombra*/
+  }
+
+  .titulo-imagem-produto {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: var(--fonte_primaria);
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .inner > p {
+    font-family: var(--fonte_primaria);
+    font-size: 0.8rem;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  /* Botao */
+  .paddle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    background-color: var(--cor-branco);
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    vertical-align: middle
+  }
+
+  .lefty {
+    left: 0;
+    background-image: url('../assets/chevron.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  
+  .righty {
+    right: 0;
+    background-image: url('../assets/chevron.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(180deg);
+  }
+  
+  /* 3- 5  */
+  .educacao-infantil-3-5 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    /* Botao ficar fixo */
+    position: relative;
+    margin-top: 30px;
+    /* Separar das outras divs */
+    margin-bottom: 20px; 
+   
+}
+
+.outer-3-5 {
+  max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    overflow: hidden;
+    
+  }
+
+    /* 6- 8  */
+    .educacao-infantil-6-8 {
+      display: flex;
+      flex-direction: column;
+      max-width: 100vw;
+      /* Botao ficar fixo */
+      position: relative;
+      margin-top: 30px;
+      /* Separar das outras divs */
+      margin-bottom: 20px; 
+     
+  }
+  
+  .outer-6-8 {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: start;
+      overflow: hidden;
+    }
+
+     /* 9 - 10  */
+     .educacao-infantil-9-10 {
+      display: flex;
+      flex-direction: column;
+      max-width: 100vw;
+      /* Botao ficar fixo */
+      position: relative;
+      margin-top: 30px;
+      /* Separar das outras divs */
+      margin-bottom: 20px; 
+     
+  }
+  
+  .outer-9-10 {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: start;
+      overflow: hidden;
+    }
+
+/* 11-14  */
+.educacao-infantil-11-14 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  /* Botao ficar fixo */
+  position: relative;
+  margin-top: 30px;
+  /* Separar das outras divs */
+  margin-bottom: 20px; 
+
+}
+
+.outer-11-14 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  overflow: hidden;
+}
+
+/* Linha divisória verde */
+.linha-verde {
+  width: 100vw;
+  max-width: 100vw;
+  border: 1px solid var(--cor-secundaria);
+
+}
